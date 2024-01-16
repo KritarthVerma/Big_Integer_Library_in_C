@@ -327,7 +327,7 @@ BI mul(BI a,BI b){
         a.sign = 0;
         return a;
     }
-    if(b.length===1 && b.head->val==0)return b;
+    if(b.length==1 && b.head->val==0)return b;
     if(a.length < b.length){
         BI c = a;
         a = b;
