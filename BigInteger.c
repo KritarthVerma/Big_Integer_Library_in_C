@@ -379,7 +379,7 @@ BI mul(BI a,BI b){
     return c;
 }
 
-BI div(BI a,BI b){
+BI divide(BI a,BI b){
     if(a.head==NULL){
         a.head = newNode(0);
         a.length = 1;
@@ -439,7 +439,7 @@ BI mod(BI a,BI b){
         return a;
     }
     if(x==0)return a;
-    BI c = div(a,b);
+    BI c = divide(a,b);
     c = sub(a,mul(c,b));
     c.sign = 0;
     c.length = length(c.head);
