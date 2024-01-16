@@ -25,7 +25,7 @@ BI initialise(char *str);
 BI sub(BI a,BI b);
 BI add(BI a,BI b);
 BI mul(BI a,BI b);
-BI div(BI a,BI b);
+BI divide(BI a,BI b);
 BI mod(BI a,BI b);
 
 #endif
